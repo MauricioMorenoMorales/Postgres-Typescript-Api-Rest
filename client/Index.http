@@ -2,3 +2,27 @@
 
 ###
 GET {{host}}
+
+###
+GET {{host}}/2
+
+###
+POST {{host}}
+Content-Type: application/json
+
+{
+	"name":"John",
+	"email":"john@gmail.com"
+}
+
+###
+PUT {{host}}/3
+Content-Type: application/json
+
+{
+	"name":"Johann",
+	"email":"Johann@gmail.com"
+}
+
+###
+DELETE {{host}}/3

@@ -23,8 +23,8 @@ const express_1 = require("express");
 const router = express_1.Router();
 const Controller = __importStar(require("../controllers/index.controller"));
 router.get('/', Controller.getUser);
-// router.get('/:id', Controller.getUser)
-// router.post('/', Controller.getUser)
-// router.put('/:id', Controller.getUser)
-// router.delete('/:id', Controller.getUser)
+router.get('/:id', Controller.getUserById);
+router.post('/', Controller.createUser);
+router.put('/:id', Controller.updateUser);
+router.delete('/:id', Controller.deleteUser);
 exports.default = router;

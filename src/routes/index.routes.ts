@@ -4,9 +4,9 @@ const router = Router()
 import * as Controller from '../controllers/index.controller'
 
 router.get('/', Controller.getUser)
-// router.get('/:id', Controller.getUser)
-// router.post('/', Controller.getUser)
-// router.put('/:id', Controller.getUser)
-// router.delete('/:id', Controller.getUser)
+router.get('/:id', Controller.getUserById)
+router.post('/', Controller.createUser)
+router.put('/:id', Controller.updateUser)
+router.delete('/:id', Controller.deleteUser)
 
 export default router
